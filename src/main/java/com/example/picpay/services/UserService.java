@@ -1,6 +1,7 @@
 package com.example.picpay.services;
 
 import com.example.picpay.DTOs.UserDTO;
+import com.example.picpay.domain.transaction.Transaction;
 import com.example.picpay.domain.user.User;
 import com.example.picpay.domain.user.UserType;
 import com.example.picpay.repositories.UserRepository;
@@ -43,4 +44,5 @@ public class UserService {
     public List<User> getAllUsers(){
         return this.repository.findAll();
     }
+
 }

@@ -1,6 +1,7 @@
 package com.example.picpay.controllers;
 
 import com.example.picpay.DTOs.UserDTO;
+import com.example.picpay.domain.transaction.Transaction;
 import com.example.picpay.domain.user.User;
 import com.example.picpay.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController()
-@RequestMapping("/users")
+@RequestMapping("/api/acconts")
 public class userController {
 
     @Autowired

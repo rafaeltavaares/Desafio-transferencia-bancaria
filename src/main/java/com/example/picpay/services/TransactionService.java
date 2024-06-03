@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -67,6 +68,10 @@ public class TransactionService {
           return "success".equalsIgnoreCase((String) message);
       }else return false;
 
+    }
+
+    public List<Transaction> findTransaction(Long id) throws Exception {
+        return this.repository.findTransactionBySender_id(id);
     }
 
 }

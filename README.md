@@ -75,11 +75,11 @@ O projeto estará disponível em `http://localhost:8080`.
         }
         ```
 
-### Consulta de Saldo
+### Consulta de contas
 - **GET** `/api/accounts`
     - **Descrição:** Retorna todas as contas.
-      
+  
 ### Histórico de Transações
-- **GET** `/api/accounts/{id}/transactions`
+- **GET** `/api/transactions/{accountID}/transaction`
     - **Descrição:** Consulta o histórico de transações de uma conta específica.
     - **Parâmetros:** ID da conta.
